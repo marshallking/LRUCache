@@ -10,14 +10,14 @@ public class LRUCache {
 	public static final int OK = 1;
 	public static final int ERROR = 0;
 
-	public LRUQueue cacheQueue;
+	private LRUQueue cacheQueue;
 
 	public LRUCache(LRUQueue lruQueue) {
 		// TODO Auto-generated constructor stub
 		cacheQueue = lruQueue;
 	}
 
-	public Hash hash;
+	private Hash hash;
 
 	class Hash {
 		public int capasity;
@@ -58,7 +58,7 @@ public class LRUCache {
 
 			if (tmpNode != null) {
 				// if the node is in the queue,then remove
-				if (cacheQueue.Queue.contains(tmpNode)) {
+				if (cacheQueue.getQueue().contains(tmpNode)) {
 					cacheQueue.removeNode(tmpNode);
 					// else if the queue is full,then make room for new node
 				} else if (cacheQueue.isQueueFull()) {

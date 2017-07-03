@@ -9,9 +9,8 @@ public class LRUQueue {
 								// type
 	}
 
-	int count;
-	int capasity;
-	LinkedList<QueueNode> Queue;
+	private int capasity;
+	private LinkedList<QueueNode> Queue;
 
 	public LRUQueue(int size) {
 		// TODO Auto-generated constructor stub
@@ -23,6 +22,13 @@ public class LRUQueue {
 		lruQueue.forEach((temp) -> {
 			System.out.println(temp.Value);
 		});
+	}
+
+	public LinkedList<QueueNode>  getQueue() {
+		return Queue;
+	}
+	public int  capasity() {
+		return capasity;
 	}
 
 	public QueueNode newNode() {

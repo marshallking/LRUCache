@@ -8,7 +8,7 @@ public class LRUQueueTest {
 	@Test
 	public void testQueueSize() {
 		LRUQueue test = new LRUQueue(5);
-		assertEquals(5, test.capasity);
+		assertEquals(5, test.capasity());
 	}
 
 	@Test
