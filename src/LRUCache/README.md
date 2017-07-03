@@ -84,17 +84,23 @@ GOT four
 
 TO BUILD THIS PROJECT:
 
-1. download the code.
-2. go get github.com/gorilla/mux
-3. go build *.go
+1. download the code.  https://github.com/marshallking/LRUCache.git
+2. javac LRUJavaCache.java LRUCache.java LRUQueue.java 
+3.  
 
 TO DEPLOY/RUN:
 
-    1. ./fibHandler
+    1. Java LRUCache.LRUJavaCache
 
  
 
 Example:
+
+Size 10
+  -- SIZE OK
+Set foo 22
+get foo
+  -- Got 22
 
    
 
@@ -102,13 +108,17 @@ Example:
 
 INCLUDED FILES IN THIS PROJECT
 
-main.go                - MAIN program
-fibHandler.go          - API Handler 
-fibonacci_test.go      - Unit and Functional Tests.
+LRUJavaCache.java                - MAIN program
+LRUCache.java
+LRUQueue.java
+LRUCacheTest.java
+LRUQueueTest.java
+package-info.java
 
+ 
 TO RUN TESTS
 
-1. go test -v
+1.  
 
 
 
