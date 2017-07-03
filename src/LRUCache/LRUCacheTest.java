@@ -3,7 +3,6 @@ package LRUCache;
 import static org.junit.Assert.*;
 import org.junit.Test;
 
-
 public class LRUCacheTest {
 
 	@Test
@@ -31,11 +30,11 @@ public class LRUCacheTest {
 
 		LRUQueue lruQueue = new LRUQueue(3);
 		LRUCache lruCache = new LRUCache(lruQueue);
-	    lruCache.createHash(3);
+		lruCache.createHash(3);
 		lruCache.set("foo", "5");
 		lruCache.set("foo", "6");
 		lruCache.set("foo", "7");
-	    lruCache.set("foo", "8");
+		lruCache.set("foo", "8");
 
 		LRUQueue.QueueNode resultNode = lruCache.get("foo");
 

@@ -1,5 +1,23 @@
 # LRUCache
  
+NOTES:
+
+1. Per your time requirements of two hours. Due to Java as not my current language I spent time re-familiarizing myself with the Java language and getting setup to develop in that environment. This did cause me to take more time to complete this exercise. Before this exercise I did write a LRUCache using the go language.. which basically I ported to the java language for this exercise. In my estimate I spent 2-3 hours on this project.
+
+2. I developed this LRUCache using eclipse.
+3. The version of Java used - 1.8.0_131.
+4. My process was:
+    a. Reviewed the requirements. Normally, I would have a lot of questions about these requirements. But due to time and the fact of writing this program on the weekend.. I skipped the requirements question and answer portion of this exercise.
+    
+    b. From the "write from scratch" requirement.. I did not use Java classes that I would have normally. Not only would it have made the program better.. also would have been a lot less code.
+    c. Came up with my design for the LRUCache and chose to use a Hsahmap (O(1)) and LinkedList (O(n)).
+    d. I created the unit tests first. Basically stubbed out a few tests specifically right from the requirements.
+    d. Designed my data structures and classes needed for this project.
+    e. Implemented them.
+    f. Ran my unit tests as I completed methods.
+    g. When completed I ran a full functional test based on the initial requirements.
+    
+
 
 Initial Requirements:
 
@@ -20,7 +38,6 @@ We are interested in your approach and style, not someone else's. It's more impo
 With all of that out of the way, the question: 
 
 Design and implement an LRU (Least Recently Used) cache. This is a cache with fixed size in terms of the number of items it holds (supplied at instantiation).  For this exercise, we won’t worry about the number of bytes. Your program can treat the keys and values as strings.  You don’t need to support keys or values that contain spaces.  The cache must allow client code to get items from the cache and set items to the cache. Once the cache is full, when the client wants to store a new item in the cache, an old item must be overwritten or
-
 removed to make room. The item we will remove is the Least Recently Used (LRU) item.  Note that your cache does not need persistence across sessions.
 
 Please read input from stdin and print output to stdout and support the following format (please DO NOT print any kind of a prompt or extra line breaks).
@@ -86,9 +103,11 @@ TO BUILD THIS PROJECT:
 
 1. download the code.  https://github.com/marshallking/LRUCache.git
 2. javac LRUJavaCache.java LRUCache.java LRUQueue.java 
-3.  
+3. my classpath was -- :/Users/marshallking/workspace/LRUCache/bin
+4. copy .class files to directory that your CLASSPATH points to.
+  
 
-TO DEPLOY/RUN:
+TO/RUN:
 
     1. Java LRUCache.LRUJavaCache
 
@@ -118,7 +137,7 @@ package-info.java
  
 TO RUN TESTS
 
-1.  
+1.  The unit tests run from within the eclipse IDE. 
 
 
 

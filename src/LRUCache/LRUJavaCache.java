@@ -3,14 +3,13 @@ package LRUCache;
 import java.util.Scanner;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
- 
- 
+
 public class LRUJavaCache {
 
 	public LRUJavaCache() {
 
 	}
-	
+
 	public static void main(String[] args) {
 
 		LRUQueue.QueueNode retNode = null;
@@ -18,7 +17,6 @@ public class LRUJavaCache {
 		LRUCache lruCache = null;
 		int nRet = 0;
 
-		
 		Scanner scanner = new Scanner(System.in);
 		while (true) {
 			String question = scanner.nextLine().toUpperCase();
@@ -34,6 +32,8 @@ public class LRUJavaCache {
 						lruCache = new LRUCache(lruQueue);
 						lruCache.createHash(Integer.parseInt(inParms[1]));
 						System.out.println("SIZE OK\n");
+					} else {
+						System.out.println("ERROR");
 					}
 
 				} else {
